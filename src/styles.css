@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #F8F8F8;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

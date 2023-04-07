@@ -1,0 +1,42 @@
+.btn-danger{
+  margin-right: 5px;
+}
+
+.input-ingredients{
+  margin-bottom: 10px;
+}
+
+.teste{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.amount{
+  max-width: 4rem;
+}
+
+.amount input{
+  text-align: center;
+}
+
+.delete button{
+  border-radius: 50rem;
+  padding-block: 0.6rem;
+  font-weight: 600;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+
+.btn-crud{
+  float: right;
+}
+
+.form-group label{
+  font-weight: 600;
+}

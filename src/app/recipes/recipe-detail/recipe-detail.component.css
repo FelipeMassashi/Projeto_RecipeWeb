@@ -1,0 +1,25 @@
+img{
+  margin: auto;
+}
+
+h1{
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.btn-group{
+  margin: 1.8rem 0 0 0;
+}
+
+.desc-recipe{
+  font-weight: 500;
+}
+
+.list-group-item{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.list-group-item:first-child{
+  margin-top: 1rem;
+}
