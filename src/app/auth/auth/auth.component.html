@@ -1,8 +1,12 @@
 <div class="row">
   <div class="col-xs-12 col-md-6 col-md-offset-3">
-    <div class="alert alert-danger" *ngIf="error">
-      <p>{{ error }}</p>
+    <div class="text-center">
+      <h4>Faça o Login para ter acesso ao sistema!</h4>
     </div>
+    <!-- <div class="alert alert-danger" *ngIf="error">
+      <p>{{ error }}</p>
+    </div> -->
+    <app-alert [message]="error" *ngIf="error" (close)="onHandleError()"></app-alert>
     <div *ngIf="isLoading" style="text-align: center;">
       <app-loading-spinner></app-loading-spinner>
     </div>
@@ -15,9 +19,8 @@
         <label for="password">Password</label>
         <input type="password" id="password" class="form-control" ngModel name="password" required minlength="6">
       </div>
-      <div>
-        <button class="btn btn-primary" [disabled]="!authForm.valid">{{ isLoginMode ? 'Login' : 'Sign Up' }}</button> |
-        <button class="btn btn-primary" (click)="onSwitchMode()" type="button">Switch to {{ isLoginMode ? 'Sign Up' : 'Login' }}</button>
+      <div class="content-btn">
+        <button class="btn btn-primary" [disabled]="!authForm.valid">Login</button>
       </div>
     </form>
   </div>

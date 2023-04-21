@@ -5,7 +5,14 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  background-color: #F8F8F8;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  /* width of the entire scrollbar */
 }

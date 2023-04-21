@@ -15,7 +15,7 @@
 }
 
 .amount{
-  max-width: 4rem;
+  max-width: 5rem;
 }
 
 .amount input{
@@ -39,4 +39,15 @@ textarea.ng-invalid.ng-touched{
 
 .form-group label{
   font-weight: 600;
+}
+
+.quantity{
+  width: 100%;
+  text-align: center;
+}
+
+.quantity p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }

@@ -37,8 +37,6 @@ export class AuthComponent implements OnInit {
     this.isLoading = true;
     if (this.isLoginMode) {
       authObs = this.authService.login(email, password);
-    } else {
-      authObs = this.authService.signUp(email, password);
     }
 
     authObs.subscribe(
@@ -55,6 +53,10 @@ export class AuthComponent implements OnInit {
     );
 
     form.reset();
+  }
+
+  onHandleError() {
+    this.error = null;
   }
 
 }

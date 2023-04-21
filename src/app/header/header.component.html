@@ -11,7 +11,7 @@
       <ul class="nav navbar-nav menu-itens">
         <li routerLinkActive="active"><a routerLink="/recipes" *ngIf="isAuthenticated">Recipes</a></li>
         <li routerLinkActive="active"><a routerLink="/auth" *ngIf="!isAuthenticated">Authenticate</a></li>
-        <li routerLinkActive="active"><a routerLink="/shopping-list">Shopping List</a></li>
+        <li routerLinkActive="active"><a routerLink="/shopping-list" *ngIf="isAuthenticated">Shopping List</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right menu-itens-login">
         <li *ngIf="isAuthenticated" class="menu-itens-first">

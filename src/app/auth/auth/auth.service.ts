@@ -25,21 +25,6 @@ export class AuthService{
 
   constructor(private http: HttpClient, private router: Router){}
 
-  signUp(email: string, password: string){
-    return this.http.post<AuthResponseData>(
-      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAAQy91zoWawfxHhrG5Jngxyzml4VszpqY',
-      {
-        email: email,
-        password: password,
-        returnSecureToken: true
-      }
-    )
-    .pipe(catchError(this.handleError), tap(resData => {
-      this.handleAuthentication(resData.email, resData.localId, resData.idToken, +resData.expiresIn);
-    })
-    );
-  }
-
   login(email: string, password: string){
     return this.http.post<AuthResponseData>(
       'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAAQy91zoWawfxHhrG5Jngxyzml4VszpqY',

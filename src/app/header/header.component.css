@@ -5,6 +5,8 @@
 
 .navbar{
   background-color: white;
+  border: none;
+  border-radius: 0;
 }
 
 .navbar-header{
@@ -19,6 +21,7 @@
   font-size: 2.2rem;
   color: white;
   transition: all .3s;
+  border-radius: 2rem;
 }
 
 .title:hover{
